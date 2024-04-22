@@ -202,6 +202,7 @@ nav > #utility {
   height: 100%;
   position: absolute;
   object-fit: contain;
+  
 
 
 
@@ -680,6 +681,23 @@ footer ul li {
       text-align: center;
   }
 
+
+ 
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+
+section.hero h1 {
+    font-size: var(--hero-text);
+    font-weight: 600;
+    line-height: 1.2;
+    width: 40%;
+
+    color: var(--text-01);
+}
 
 }
 

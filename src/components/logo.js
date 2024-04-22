@@ -1,13 +1,13 @@
 import React from 'react';
-import logotur from '.../src/components/logotur.png';
+import logo from '../src/logotur.png';
 
-function logotur() {
+function logo() {
   return (
     <div>
       <h2>a</h2>
-      <img src={logotur} alt="logo" />
+      <img src={logo} alt="logo" />
     </div>
   );
 }
 
-export default logotur;
+export default logo;

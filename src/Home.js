@@ -1,5 +1,7 @@
 
 import logo from '../src/components/logotur.png';
+import MeuComponente from './components/imgprincipal';
+import imgprincipal from './components/imgprincipal';
 
 function Home() {
   return (
@@ -11,19 +13,27 @@ function Home() {
   <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Substitua logo pelo caminho da sua imagem do logo */}
   Acess <br /> Tour
 </div>
-        <ul className="navigation-menu">
-          
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#serv-groom">Serviços</a></li>
-          <li><a href="#locate">Quem Somos</a></li>
-        </ul>
-      </nav>
-    </header>
+       <ul className="navigation-menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#serv-groom">Serviços</a></li>
+              <li><a href="#locate">Quem Somos</a></li>
+            </ul>
+            <div className="btn-group">
+              <button className="btn-outline-dark btn-hover-color"><span className="material-symbols-outlined">Faça o seu login</span></button>
+            </div>
+          </nav>
+        </header>
 
       <section className="hero">
         <h1>Explore o mundo com facilidade e conforto.</h1>
+        <div id="img">
+  {/* Aqui você pode colocar a tag <img> para exibir sua imagem */}
+  <img src={MeuComponente} alt="img" style={{ width: '100px', height: 'auto' }} /> {/* Substitua logo pelo caminho da sua imagem do logo */}
+  Acess <br /> Tour
+</div>
         <div className="btn-group">
           <button className="btn-filled-dark"><span className="material-symbols-outlined">Sobre o nosso site</span></button>
+          
         </div>
       </section>
 
@@ -33,7 +43,8 @@ function Home() {
   <h2>Serviços</h2>
   <ul className="services">
     <li className="card-large card-dark card-wide">
-      <div className="card-image">
+      <div className="card-image1">
+      <img src={require('./assets/localização4.png')} alt=""/>
       </div>
       <ul>
         <span className="subtitle">Guia por localização</span>
@@ -43,7 +54,7 @@ function Home() {
     </li>
     <li className="card-large card-dark card-wide">
       <div className="card-image">
-        <img src="https://ouch-cdn2.icons8.com/F5Ea1suZtMYimKDkJr0CJLO_1bju6-bTyT1EuDKEg8s/rs:fit:368:254/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjcx/LzVjMzE4NWM0LWZh/NTMtNGQ1OS05ZTM2/LTZjYzBhNGU3ODg0/NC5wbmc.png" alt=""/>
+        <img src={require('./assets/guias.png')} alt=""/>
       </div>
       <ul>
         <span className="subtitle">Guias Turísticos</span>
